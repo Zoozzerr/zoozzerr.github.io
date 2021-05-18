@@ -20,6 +20,9 @@ $(function() {
             $.ajax({
                 url: "https://formspree.io/f/xrgorepa",
                 type: "POST",
+                headers: {
+                    'Accept': 'application/json'
+                },
                 data: {
                     name: name,
                     phone: phone,
